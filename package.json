@@ -1,0 +1,30 @@
+{
+  "name": "music-bot-markii",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElementalWisp/Music-Bot-MarkII.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElementalWisp/Music-Bot-MarkII/issues"
+  },
+  "homepage": "https://github.com/ElementalWisp/Music-Bot-MarkII#readme",
+  "description": "",
+  "dependencies": {
+    "@discordjs/opus": "^0.8.0",
+    "@discordjs/voice": "^0.11.0",
+    "@distube/soundcloud": "^1.2.2",
+    "@distube/spotify": "^1.4.2",
+    "@distube/yt-dlp": "^1.1.3",
+    "discord.js": "^14.5.0",
+    "discordjs-button-embed-pagination": "^5.0.0",
+    "distube": "^4.0.4",
+    "libsodium-wrappers": "^0.7.10"
+  }
+}
