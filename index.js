@@ -5,7 +5,7 @@ const Distube = require("distube");
 const {SoundCloudPlugin} = require("@distube/soundcloud");
 const {SpotifyPlugin} = require("@distube/spotify");
 const {YtDlpPlugin} = require("@distube/yt-dlp");
-const {TOKEN, COOKIE, youtubeId} = require("./config.json");
+const {TOKEN, COOKIE} = require("./config.json");
 
 const client = new Client
 ({
