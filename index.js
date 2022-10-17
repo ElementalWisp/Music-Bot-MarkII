@@ -5,7 +5,7 @@ const Distube = require("distube");
 const {SoundCloudPlugin} = require("@distube/soundcloud");
 const {SpotifyPlugin} = require("@distube/spotify");
 const {YtDlpPlugin} = require("@distube/yt-dlp");
-const {TOKEN} = require("./config.json");
+const {TOKEN, COOKIE, youtubeId} = require("./config.json");
 
 const client = new Client
 ({
@@ -28,6 +28,8 @@ client.distube = new Distube.default(client,
         leaveOnFinish: false,
         leaveOnStop: true,
         nsfw: true,
+        youtubeCookie: COOKIE,
+        youtubeIdentityToken: youtubeId,
         plugins: 
         [
             new SoundCloudPlugin(), 
