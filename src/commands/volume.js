@@ -24,7 +24,7 @@ module.exports =
 
             const embed = new EmbedBuilder()
                 .setColor(color)
-                .setDescription(`Volume set to \`${volume}%\` for [${queue.songs[0].name}](${queue.songs[0].url})`);
+                .setDescription(`Volume set to \`${interaction.options.getInteger("number")}%\` for [${queue.songs[0].name}](${queue.songs[0].url})`);
 
             await interaction.reply({ embeds: [embed]}).catch(console.error);
             setTimeout(() => interaction.deleteReply().catch(console.error), 10000);
